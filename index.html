@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ivan Dalemski | Portfolio</title>
+      <link rel="stylesheet" href="styles.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+   </head>
+   <body>
+      <!-- Custom Cursor -->
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+         <div class="nav-container">
+            <div class="logo">
+               <span class="logo-text" data-text="ID">ID</span>
+            </div>
+            <ul class="nav-menu">
+               <li><a href="#home" class="nav-link">Home</a></li>
+               <li><a href="#about" class="nav-link">About</a></li>
+               <li><a href="#projects" class="nav-link">Projects</a></li>
+               <li><a href="#skills" class="nav-link">Skills</a></li>
+               <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+         <div class="particles" id="particles"></div>
+         <div class="hero-content">
+            <h1 class="glitch" data-text="IVAN DALEMSKI">IVAN DALEMSKI</h1>
+            <div class="typing-container">
+               <p class="typing-text">
+                  I'm a <span class="typed-text"></span
+                  ><span class="cursor-blink">|</span>
+               </p>
+            </div>
+            <div class="hero-buttons">
+               <a href="#projects" class="btn btn-primary">View My Work</a>
+               <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+         </div>
+         <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+         <div class="container">
+            <h2 class="section-title reveal" data-text="ABOUT ME">ABOUT ME</h2>
+            <div class="about-content">
+               <div class="about-image reveal">
+                  <div class="image-wrapper">
+                     <img src="images/IMG_9803.JPG" alt="Ivan Dalemski" />
+                     <div class="image-overlay"></div>
+                  </div>
+               </div>
+               <div class="about-text reveal">
+                  <h3>
+                     Hello, I'm <span class="highlight">Ivan Dalemski</span>
+                  </h3>
+                  <p>
+                     I am a passionate student of ICT, specializing in software
+                     engineering and Ai, Machine Learning & Data. I was born and
+                     raised in Plovdiv, Bulgaria, but I am currently in my 4th
+                     semester studying at
+                     <a href="https://www.fontys.nl/en/Home.htm">Fontys</a>
+                     in the Netherlands. During my studies, so far I have worked
+                     with companies like ATOS, ATOS Eviden, FitPhone and many
+                     more.
+                  </p>
+                  <p>
+                     My journey with programming began at 16, when i obtained my
+                     first sertificate in OOP programing with C# from
+                     <a href="https://softuni.bg/">SoftUni</a>. Since then, I
+                     have been dedicated on expanding my skills and knowledge in
+                     the field of ICT. I always strive to build innovative and
+                     efficient solutions and now I am looking forward to deepen
+                     my knowlege with an internship.
+                  </p>
+                  <div class="stats">
+                     <div class="stat-item">
+                        <h4 class="stat-number" data-target="10">0</h4>
+                        <p>Projects Completed</p>
+                     </div>
+                     <div class="stat-item">
+                        <h4 class="stat-number" data-target="4">0</h4>
+                        <p>Happy Clients</p>
+                     </div>
+                     <div class="stat-item">
+                        <h4 class="stat-number" data-target="4">0</h4>
+                        <p>Years Experience</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+         <div class="container">
+            <h2 class="section-title reveal" data-text="SKILLS">SKILLS</h2>
+            <div class="skills-grid">
+               <div class="skill-card reveal">
+                  <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                  <h3>Frontend</h3>
+                  <div class="skill-tags">
+                     <span>HTML5</span>
+                     <span>CSS3</span>
+                     <span>JavaScript</span>
+                     <span>React</span>
+                     <span>Tailwind CSS</span>
+                  </div>
+               </div>
+               <div class="skill-card reveal">
+                  <div class="skill-icon"><i class="fas fa-server"></i></div>
+                  <h3>Backend</h3>
+                  <div class="skill-tags">
+                     <span>C#</span>
+                     <span>Python</span>
+                     <span>Java</span>
+                     <span>MSSQL</span>
+                     <span>MySQL</span>
+                  </div>
+               </div>
+               <div class="skill-card reveal">
+                  <div class="skill-icon">
+                     <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h3>AI</h3>
+                  <div class="skill-tags">
+                     <span>Python</span>
+                     <span>Pandas</span>
+                     <span>Scikit-learn</span>
+                     <span>Numpy</span>
+                     <span>TensorFlow</span>
+                     <span>CNN</span>
+                     <span>Matplotlib</span>
+                  </div>
+               </div>
+               <div class="skill-card reveal">
+                  <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                  <h3>Frameworks</h3>
+                  <div class="skill-tags">
+                     <span>Flask</span>
+                     <span>ASP.NET</span>
+                     <span>Spring Boot</span>
+                     <span>React Native</span>
+                     <span>MVC</span>
+                     <span>Razor Pages</span>
+                     <span>Entity Framework</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+         <div class="container">
+            <h2 class="section-title reveal" data-text="PROJECTS">PROJECTS</h2>
+
+            <!-- Project Filters -->
+            <div class="filter-buttons reveal">
+               <button class="filter-btn active" data-filter="all">All</button>
+               <button class="filter-btn" data-filter="web">Web</button>
+               <button class="filter-btn" data-filter="AI">AI</button>
+               <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+               <!-- Project 1 -->
+               <div class="project-card reveal" data-category="web">
+                  <div class="project-image">
+                     <img src="images/mood2muisc.png" alt="Project 1" />
+                     <div class="project-overlay">
+                        <div class="project-links">
+                           <a href="" class="project-link" data-project="1"
+                              ><i class="fas fa-eye"></i
+                           ></a>
+                           <a
+                              href="https://github.com/Dalemski/Mood2Music"
+                              class="project-link"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                           <a
+                              href="https://i546396.luna.fhict.nl/"
+                              class="project-link"
+                              ><i class="fas fa-external-link-alt"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-info">
+                     <h3>Mood2Music</h3>
+                     <p>
+                        Mood2Music is a layered ASP.NET Core web application
+                        that helps users discover music based on mood and manage
+                        playlists.
+                     </p>
+                     <div class="project-tech">
+                        <span>C#</span>
+                        <span>ASP.NET</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 2 -->
+               <div class="project-card reveal" data-category="web">
+                  <div class="project-image">
+                     <img src="images/atos.png" alt="Project 2" />
+                     <div class="project-overlay">
+                        <div class="project-links">
+                           <a href="#" class="project-link" data-project="2"
+                              ><i class="fas fa-eye"></i
+                           ></a>
+                           <a
+                              href="https://github.com/Dalemski/ATOS-App"
+                              class="project-link"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                           <a href="#" class="project-link"
+                              ><i class="fas fa-external-link-alt"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-info">
+                     <h3>ATOS Flag System</h3>
+                     <p>
+                        Client: <a href="https://atos.net/en">ATOS</a><br />
+                        Modernising old application built with Microsoft Access,
+                        used for registering sales and generating customer
+                        invoices.
+                     </p>
+                     <div class="project-tech">
+                        <span>C#</span>
+                        <span>ASP.NET</span>
+                        <span>MVC</span>
+                        <span>HTML/CSS</span>
+                        <span>ORM</span>
+                        <span>MySQL</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 3 -->
+               <div class="project-card reveal" data-category="AI">
+                  <div class="project-image">
+                     <img
+                        src="images/eye.png"
+                        alt="Eyes Refractive Error"
+"
+                     />
+                     <div class="project-overlay">
+                        <div class="project-links">
+                           <a href="#" class="project-link" data-project="3"
+                              ><i class="fas fa-eye"></i
+                           ></a>
+                           <a href="https://github.com/Dalemski/AI-Eyes-Refractive-Error" class="project-link"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                           <a href="https://dalemski-ai-eyes-refractive-error-interface-tbjovi.streamlit.app/" class="project-link"
+                              ><i class="fas fa-external-link-alt"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-info">
+                     <h3>Eyes Refractive Error</h3>
+                     <p>
+                        A deep-learning project that classifies retinal fundus images into Normal Vision or Myopia using a fine-tuned ResNet18 model.
+                     </p>
+                     <div class="project-tech">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>OpenCV</span>
+                        <span>TensorFlow</span>
+                        <span>Grad-Cam</span>
+                        <span>Convolutional Neural Networks(CNN)</span>
+                        <span>Pandas</span>
+                        <span>Numpy</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 4 -->
+               <div class="project-card reveal" data-category="AI">
+                  <div class="project-image">
+                     <img
+                        src="images/fitphone.png"
+                        alt="Project 4"
+                     />
+                     <div class="project-overlay">
+                        <div class="project-links">
+                           <a href="#" class="project-link" data-project="4"
+                              ><i class="fas fa-eye"></i
+                           ></a>
+                           <a href="https://github.com/Dalemski/AI-FitPhone" class="project-link"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                           <a href="#" class="project-link"
+                              ><i class="fas fa-external-link-alt"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-info">
+                     <h3>FitPhone Mobile App</h3>
+                     <p>
+                        Client: <a href="https://fitphone.nl/">FitPhone</a><br />
+                        FitPhone is a project aimed at helping users improve their sleep quality by understanding the impact of phone usage on sleep.
+                     </p>
+                     <div class="project-tech">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>Numpy</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 5 -->
+               <div class="project-card reveal" data-category="AI">
+                  <div class="project-image">
+                     <img
+                        src="images/prediction.png"
+                        alt="Project 5"
+                     />
+                     <div class="project-overlay">
+                        <div class="project-links">
+                           <a href="#" class="project-link" data-project="5"
+                              ><i class="fas fa-eye"></i
+                           ></a>
+                           <a href="https://github.com/Dalemski/AI-Vehicle-Price-Evaluation" class="project-link"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                           <a href="#" class="project-link"
+                              ><i class="fas fa-external-link-alt"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-info">
+                     <h3>Vehicle Price Evaluation</h3>
+                     <p>
+                        The Vehicle Price Evaluation project aims to predict the prices of vehicles in Bulgaria 
+                        based on their attributes, such as mileage, engine size, brand, and condition.
+                     </p>
+                     <div class="project-tech">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>Numpy</span>
+                        <span>Matplotlib</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Project 6 -->
+               <div class="project-card reveal" data-category="web">
+                  <div class="project-image">
+                     <img
+                        src="images/pizza.png"
+                        alt="Project 6"
+                     />
+                     <div class="project-overlay">
+                        <div class="project-links">
+                           <a href="#" class="project-link" data-project="6"
+                              ><i class="fas fa-eye"></i
+                           ></a>
+                           <a href="https://github.com/Dalemski/MARIO-AND-LUIGI-S-PIZZERIA" class="project-link"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                           <a href="#" class="project-link"
+                              ><i class="fas fa-external-link-alt"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-info">
+                     <h3>MARIO AND LUIGI'S PIZZERIA</h3>
+                     <p>
+                        Pizzeria management system including hardware interaction.
+                     </p>
+                     <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>HTML/CSS</span>
+                        <span>Arduino</span>
+                        <span>C++</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Project Modal -->
+      <div class="modal" id="projectModal">
+         <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+               <div class="modal-video">
+                  <iframe
+                     src=""
+                     frameborder="0"
+                     allow="autoplay; encrypted-media"
+                     allowfullscreen
+                  ></iframe>
+               </div>
+               <div class="modal-details">
+                  <h2 class="modal-title">Project Title</h2>
+                  <p class="modal-description">
+                     Detailed project description goes here. This is where you
+                     can explain the project in depth, including challenges,
+                     solutions, and outcomes.
+                  </p>
+
+                  <div class="modal-info-grid">
+                     <div class="modal-info-item">
+                        <h4>Category</h4>
+                        <p>Web Development</p>
+                     </div>
+                     <div class="modal-info-item">
+                        <h4>Duration</h4>
+                        <p>3 Months</p>
+                     </div>
+                     <div class="modal-info-item">
+                        <h4>Role</h4>
+                        <p>Full Stack Developer</p>
+                     </div>
+                  </div>
+
+                  <div class="modal-tech">
+                     <h4>Technologies Used</h4>
+                     <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>AWS</span>
+                     </div>
+                  </div>
+
+                  <div class="modal-links">
+                     <a href="#" class="btn btn-primary"
+                        ><i class="fab fa-github"></i> View Code</a
+                     >
+                     <a href="#" class="btn btn-secondary"
+                        ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                     >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+         <div class="container">
+            <h2 class="section-title reveal" data-text="GET IN TOUCH">
+               GET IN TOUCH
+            </h2>
+            <div class="contact-content">
+               <div class="contact-info reveal">
+                  <h3>Let's Work Together</h3>
+                  <p>
+                     I'm always interested in hearing about new projects and
+                     opportunities. Whether you have a question or just want to
+                     say hi, feel free to reach out!
+                  </p>
+
+                  <div class="contact-items">
+                     <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                           <h4>Email</h4>
+                           <a href="mailto:ivan.dalemski@email.com"
+                              >ivan.dalemski@email.com</a
+                           >
+                        </div>
+                     </div>
+                     <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                           <h4>Phone</h4>
+                           <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                     </div>
+                     <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                           <h4>Location</h4>
+                           <p>Your City, Country</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="social-links">
+                     <a href="#" class="social-link"
+                        ><i class="fab fa-github"></i
+                     ></a>
+                     <a href="#" class="social-link"
+                        ><i class="fab fa-linkedin"></i
+                     ></a>
+                     <a href="#" class="social-link"
+                        ><i class="fab fa-twitter"></i
+                     ></a>
+                     <a href="#" class="social-link"
+                        ><i class="fab fa-dribbble"></i
+                     ></a>
+                     <a href="#" class="social-link"
+                        ><i class="fab fa-behance"></i
+                     ></a>
+                  </div>
+               </div>
+
+               <form class="contact-form reveal">
+                  <div class="form-group">
+                     <input type="text" placeholder="Your Name" required />
+                  </div>
+                  <div class="form-group">
+                     <input type="email" placeholder="Your Email" required />
+                  </div>
+                  <div class="form-group">
+                     <input type="text" placeholder="Subject" required />
+                  </div>
+                  <div class="form-group">
+                     <textarea
+                        placeholder="Your Message"
+                        rows="5"
+                        required
+                     ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                     Send Message
+                  </button>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="container">
+            <p>&copy; 2026 Ivan Dalemski. All rights reserved.</p>
+            <p>Built with passion and lots of coffee ☕</p>
+         </div>
+      </footer>
+
+      <script src="scrypts.js"></script>
+   </body>
+</html>
