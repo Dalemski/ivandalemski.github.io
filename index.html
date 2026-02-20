@@ -24,8 +24,8 @@
             <ul class="nav-menu">
                <li><a href="#home" class="nav-link">Home</a></li>
                <li><a href="#about" class="nav-link">About</a></li>
-               <li><a href="#projects" class="nav-link">Projects</a></li>
                <li><a href="#skills" class="nav-link">Skills</a></li>
+               <li><a href="#projects" class="nav-link">Projects</a></li>
                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -75,23 +75,23 @@
                      Hello, I'm <span class="highlight">Ivan Dalemski</span>
                   </h3>
                   <p>
-                     I am a passionate student of ICT, specializing in software
-                     engineering and Ai, Machine Learning & Data. I was born and
+                     I am a passionate ICT student, specializing in software
+                     engineering and AI, Machine Learning & Data. I was born and
                      raised in Plovdiv, Bulgaria, but I am currently in my 4th
                      semester studying at
                      <a href="https://www.fontys.nl/en/Home.htm">Fontys</a>
-                     in the Netherlands. During my studies, so far I have worked
-                     with companies like ATOS, ATOS Eviden, FitPhone and many
+                     in the Netherlands. During my studies, I have worked
+                     with companies like ATOS, ATOS Eviden, FitPhone, and many
                      more.
                   </p>
                   <p>
-                     My journey with programming began at 16, when i obtained my
-                     first sertificate in OOP programing with C# from
+                     My journey with programming began at 16, when I obtained my
+                     first certificate in OOP programming with C# from
                      <a href="https://softuni.bg/">SoftUni</a>. Since then, I
-                     have been dedicated on expanding my skills and knowledge in
+                     have been dedicated to expanding my skills and knowledge in
                      the field of ICT. I always strive to build innovative and
-                     efficient solutions and now I am looking forward to deepen
-                     my knowlege with an internship.
+                     efficient solutions, and now I am looking forward to deepening
+                     my knowledge with an internship.
                   </p>
                   <div class="stats">
                      <div class="stat-item">
@@ -181,7 +181,6 @@
                <button class="filter-btn active" data-filter="all">All</button>
                <button class="filter-btn" data-filter="web">Web</button>
                <button class="filter-btn" data-filter="AI">AI</button>
-               <button class="filter-btn" data-filter="design">Design</button>
             </div>
 
             <!-- Projects Grid -->
@@ -190,19 +189,21 @@
                <div class="project-card reveal" data-category="web">
                   <div class="project-image">
                      <img src="images/mood2muisc.png" alt="Project 1" />
-                     <div class="project-overlay">
+                                          <div class="project-overlay">
                         <div class="project-links">
-                           <a href="" class="project-link" data-project="1"
+                           <a href="#" class="project-link" data-project="1"
                               ><i class="fas fa-eye"></i
                            ></a>
                            <a
                               href="https://github.com/Dalemski/Mood2Music"
                               class="project-link"
+                              target="_blank"
                               ><i class="fab fa-github"></i
                            ></a>
                            <a
                               href="https://i546396.luna.fhict.nl/"
                               class="project-link"
+                              target="_blank"
                               ><i class="fas fa-external-link-alt"></i
                            ></a>
                         </div>
@@ -496,7 +497,7 @@
                         <div>
                            <h4>Email</h4>
                            <a href="mailto:ivan.dalemski@email.com"
-                              >ivan.dalemski@email.com</a
+                              >ivandalemski2016@gmail.com</a
                            >
                         </div>
                      </div>
@@ -504,49 +505,41 @@
                         <i class="fas fa-phone"></i>
                         <div>
                            <h4>Phone</h4>
-                           <a href="tel:+1234567890">+1 (234) 567-890</a>
+                           <a href="tel:+1234567890">+359 882 872 361</a>
                         </div>
                      </div>
                      <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                            <h4>Location</h4>
-                           <p>Your City, Country</p>
+                           <p>Eindhoven, Netherlands</p>
                         </div>
                      </div>
                   </div>
 
                   <div class="social-links">
-                     <a href="#" class="social-link"
+                     <a href="https://github.com/Dalemski" class="social-link"
                         ><i class="fab fa-github"></i
                      ></a>
-                     <a href="#" class="social-link"
+                     <a href="https://www.linkedin.com/in/dalemski/" class="social-link"
                         ><i class="fab fa-linkedin"></i
-                     ></a>
-                     <a href="#" class="social-link"
-                        ><i class="fab fa-twitter"></i
-                     ></a>
-                     <a href="#" class="social-link"
-                        ><i class="fab fa-dribbble"></i
-                     ></a>
-                     <a href="#" class="social-link"
-                        ><i class="fab fa-behance"></i
                      ></a>
                   </div>
                </div>
 
-               <form class="contact-form reveal">
+               <form action="https://formspree.io/f/mpqjjker" method="POST" class="contact-form reveal">
                   <div class="form-group">
-                     <input type="text" placeholder="Your Name" required />
+                     <input type="text" name="name" placeholder="Your Name" required />
                   </div>
                   <div class="form-group">
-                     <input type="email" placeholder="Your Email" required />
+                     <input type="email" name="email" placeholder="Your Email" required />
                   </div>
                   <div class="form-group">
-                     <input type="text" placeholder="Subject" required />
+                     <input type="text" name="subject" placeholder="Subject" required />
                   </div>
                   <div class="form-group">
                      <textarea
+                        name="message"
                         placeholder="Your Message"
                         rows="5"
                         required
@@ -564,7 +557,7 @@
       <footer class="footer">
          <div class="container">
             <p>&copy; 2026 Ivan Dalemski. All rights reserved.</p>
-            <p>Built with passion and lots of coffee ☕</p>
+            <p>Built by Me with lots of passion and coffee ☕</p>
          </div>
       </footer>
 

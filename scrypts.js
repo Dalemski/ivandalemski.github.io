@@ -117,13 +117,18 @@ setTimeout(type, 1000);
 // ========== SMOOTH SCROLL ==========
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-         target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-         });
+      const href = this.getAttribute("href");
+
+      // Only prevent default and smooth scroll if it's an internal anchor link
+      if (href.startsWith("#") && href.length > 1) {
+         e.preventDefault();
+         const target = document.querySelector(href);
+         if (target) {
+            target.scrollIntoView({
+               behavior: "smooth",
+               block: "start",
+            });
+         }
       }
    });
 });
@@ -408,13 +413,11 @@ projectDetailLinks.forEach((link) => {
             modalVideo.innerHTML = `<iframe src="${project.videoUrl}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
          }
 
-         // Update info grid
          const infoItems = document.querySelectorAll(".modal-info-item");
          infoItems[0].querySelector("p").textContent = project.category;
          infoItems[1].querySelector("p").textContent = project.duration;
          infoItems[2].querySelector("p").textContent = project.role;
 
-         // Update technologies
          const techContainer = document.querySelector(
             ".modal-tech .project-tech",
          );
@@ -422,20 +425,23 @@ projectDetailLinks.forEach((link) => {
             .map((tech) => `<span>${tech}</span>`)
             .join("");
 
-         // Update links
          const modalLinks = document.querySelectorAll(".modal-links .btn");
-         if (project.github) {
+         if (project.github && project.github !== "#") {
             modalLinks[0].href = project.github;
             modalLinks[0].target = "_blank";
+            modalLinks[0].rel = "noopener noreferrer";
             modalLinks[0].style.display = "inline-flex";
+            modalLinks[0].style.pointerEvents = "auto";
          } else {
             modalLinks[0].style.display = "none";
          }
 
-         if (project.live) {
+         if (project.live && project.live !== "#") {
             modalLinks[1].href = project.live;
             modalLinks[1].target = "_blank";
+            modalLinks[1].rel = "noopener noreferrer";
             modalLinks[1].style.display = "inline-flex";
+            modalLinks[1].style.pointerEvents = "auto";
          } else {
             modalLinks[1].style.display = "none";
          }
@@ -447,7 +453,6 @@ projectDetailLinks.forEach((link) => {
    });
 });
 
-// Close modal
 modalClose.addEventListener("click", () => {
    modal.classList.remove("active");
    document.body.style.overflow = "auto";
@@ -459,7 +464,6 @@ window.addEventListener("click", (e) => {
       document.body.style.overflow = "auto";
    }
 });
-// Close modal when clicking outside
 modal.addEventListener("click", (e) => {
    if (e.target === modal) {
       modal.classList.remove("active");
@@ -468,7 +472,6 @@ modal.addEventListener("click", (e) => {
    }
 });
 
-// Close modal with Escape key
 document.addEventListener("keydown", (e) => {
    if (e.key === "Escape" && modal.classList.contains("active")) {
       modal.classList.remove("active");
@@ -478,21 +481,21 @@ document.addEventListener("keydown", (e) => {
 });
 
 // ========== CONTACT FORM ==========
-const contactForm = document.querySelector(".contact-form");
+// const contactForm = document.querySelector(".contact-form");
 
-contactForm.addEventListener("submit", (e) => {
-   e.preventDefault();
+// contactForm.addEventListener("submit", (e) => {
+//    e.preventDefault();
 
-   // Get form values
-   const formData = new FormData(contactForm);
+//    // Get form values
+//    const formData = new FormData(contactForm);
 
-   // Here you would typically send the data to a server
-   // For now, we'll just show an alert
-   alert("Thank you for your message! I will get back to you soon.");
+//    // Here you would typically send the data to a server
+//    // For now, we'll just show an alert
+//    alert("Thank you for your message! I will get back to you soon.");
 
-   // Reset form
-   contactForm.reset();
-});
+//    // Reset form
+//    contactForm.reset();
+// });
 
 // ========== PARALLAX EFFECT ==========
 window.addEventListener("scroll", () => {

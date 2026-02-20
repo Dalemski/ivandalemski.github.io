@@ -344,6 +344,30 @@ body {
    font-weight: 600;
 }
 
+.modal-links .btn {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.5rem;
+   pointer-events: auto !important;
+   cursor: pointer !important;
+   z-index: 10;
+   position: relative;
+}
+
+.modal-links .btn * {
+   pointer-events: none;
+}
+
+.modal-links {
+   pointer-events: auto;
+   cursor: auto;
+}
+
+.modal-body {
+   pointer-events: auto;
+   cursor: auto;
+}
+
 .cursor-blink {
    font-weight: 100;
    font-size: 2rem;
@@ -378,6 +402,16 @@ body {
    position: relative;
    overflow: hidden;
    z-index: 1;
+}
+
+.modal-links .btn {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.5rem;
+   pointer-events: auto;
+   cursor: pointer;
+   z-index: 10;
+   position: relative;
 }
 
 .image-gallery {
