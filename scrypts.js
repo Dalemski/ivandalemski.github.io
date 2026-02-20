@@ -425,6 +425,15 @@ projectDetailLinks.forEach((link) => {
             .map((tech) => `<span>${tech}</span>`)
             .join("");
 
+         const modal = document.getElementById("projectModal");
+         const modalClose = document.querySelector(".modal-close");
+         const modalBack = document.querySelector(".modal-back");
+
+         modalBack.addEventListener("click", () => {
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
+         });
+
          const modalLinks = document.querySelectorAll(".modal-links .btn");
          if (project.github && project.github !== "#") {
             modalLinks[0].href = project.github;

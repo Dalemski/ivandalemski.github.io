@@ -972,6 +972,13 @@ section {
    padding: 2rem;
 }
 
+.modal-back {
+   position: absolute;
+   bottom: 20px;
+   right: 30px;
+   z-index: 10;
+}
+
 .modal-video {
    width: 100%;
    height: 500px;
@@ -1249,7 +1256,6 @@ section {
    }
 
    .btn {
-      width: 100%;
       max-width: 300px;
    }
 
@@ -1283,4 +1289,20 @@ section {
    .typing-text {
       font-size: 1.2rem;
    }
+}
+@media (max-width: 600px) {
+   .back-button {
+      position: static;
+      display: block;
+      margin-top: 1rem; /* optional spacing */
+   }
+}
+
+html,
+body {
+   scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+   display: none; /* Chrome, Safari */
 }
